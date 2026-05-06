@@ -52,7 +52,7 @@ node -v && npm -v
 ### Install & run
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
+git clone https://github.com/HmiaoH/tile-whitebox-editor.git
 cd <your-repo>
 npm install
 npm run dev
@@ -67,24 +67,6 @@ Open <http://127.0.0.1:5173> in your browser.
 | `npm run dev`     | Start the Vite dev server with hot reload.             |
 | `npm run build`   | Type-check and produce a static build under `dist/`.   |
 | `npm run preview` | Preview the production build at `http://127.0.0.1:4173`. |
-
----
-
-## Build & deploy
-
-```bash
-npm run build      # output: dist/
-npm run preview    # local preview of the production build
-```
-
-`dist/` is a fully static bundle — drop it on any static host:
-
-- **Vercel / Netlify** — connect the repository; framework auto-detected as Vite. No extra config needed.
-- **GitHub Pages** — set `base: '/<your-repo>/'` in `vite.config.ts` before building, then publish `dist/` (manually or via a GitHub Action).
-- **Self-hosted (nginx, Caddy, etc.)** — serve `dist/` as static files.
-- **Quick local share** — `npx serve dist`.
-
-> ⚠️ Opening `dist/index.html` directly via the `file://` protocol will not work because the browser blocks ES-module loading from `file://`. Always use a real HTTP server.
 
 ---
 
