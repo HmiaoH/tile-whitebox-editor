@@ -52,7 +52,7 @@ node -v && npm -v
 ### 安装并运行
 
 ```bash
-git clone https://github.com/<你的用户名>/<你的仓库>.git
+git clone https://github.com/HmiaoH/tile-whitebox-editor.git
 cd <你的仓库>
 npm install
 npm run dev
@@ -67,24 +67,6 @@ npm run dev
 | `npm run dev`       | 启动 Vite 开发服务器，支持热更新。                |
 | `npm run build`     | 类型检查并产出 `dist/` 静态构建。                 |
 | `npm run preview`   | 在 `http://127.0.0.1:4173` 本地预览构建产物。     |
-
----
-
-## 构建与部署
-
-```bash
-npm run build      # 输出目录：dist/
-npm run preview    # 本地预览生产构建
-```
-
-`dist/` 是纯静态产物，可托管到任何静态服务：
-
-- **Vercel / Netlify** —— 直接连接仓库，框架会被识别为 Vite，无需额外配置。
-- **GitHub Pages** —— 在 `vite.config.ts` 中设置 `base: '/<你的仓库>/'`，再把 `dist/` 推到 `gh-pages` 分支（手动或通过 GitHub Action）。
-- **自建 (nginx / Caddy 等)** —— 把 `dist/` 当成静态文件托管即可。
-- **本地快速分享** —— `npx serve dist`。
-
-> ⚠️ 不要直接双击 `dist/index.html` 在 `file://` 协议下打开，浏览器会拒绝从 `file://` 加载 ES 模块。请始终通过 HTTP 服务器访问。
 
 ---
 
