@@ -38,13 +38,6 @@
 
 ---
 
-## 在线 Demo
-
-> 部署后将链接替换到这里（推荐 Vercel、Netlify 或 GitHub Pages）。
-
-> 提示：使用 [Vercel](https://vercel.com) 或 [Netlify](https://www.netlify.com) 几分钟即可上线，自动识别 Vite。具体见下文 [构建与部署](#构建与部署)。
-
----
 
 ## 快速开始
 
