@@ -9,9 +9,7 @@ A dark, pixel-styled 2D top-down whitebox tile map editor for prototyping indoor
 ## Table of contents
 
 - [Features](#features)
-- [Demo](#demo)
 - [Quick start](#quick-start)
-- [Build & deploy](#build--deploy)
 - [Keyboard shortcuts](#keyboard-shortcuts)
 - [Project file format](#project-file-format)
 - [Project structure](#project-structure)
