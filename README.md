@@ -38,13 +38,6 @@ A dark, pixel-styled 2D top-down whitebox tile map editor for prototyping indoor
 
 ---
 
-## Demo
-
-An online demo is available at: _replace this line with your deployment URL_ (e.g. Vercel, Netlify, or GitHub Pages).
-
-> Tip: deploying with [Vercel](https://vercel.com) or [Netlify](https://www.netlify.com) takes about a minute — they auto-detect Vite. See [Build & deploy](#build--deploy).
-
----
 
 ## Quick start
 
