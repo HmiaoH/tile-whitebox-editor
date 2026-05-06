@@ -1,0 +1,60 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 10, 13, 0.65);
+  display: grid;
+  place-items: center;
+  z-index: 100;
+  backdrop-filter: blur(2px);
+}
+
+.modal {
+  background: linear-gradient(180deg, #262c33 0%, #20252b 100%);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--rad-lg);
+  box-shadow: 0 12px 0 rgba(0, 0, 0, 0.4), 0 0 0 1px var(--border-strong);
+  min-width: 360px;
+  max-width: calc(100vw - 60px);
+  max-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-h {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-panel-2);
+  border-radius: var(--rad-lg) var(--rad-lg) 0 0;
+}
+.modal-title {
+  font-family: var(--font-pixel);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--fg);
+  letter-spacing: 1px;
+}
+.modal-sub {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--fg-mute);
+  margin-top: 2px;
+  letter-spacing: 0.5px;
+}
+
+.modal-body {
+  padding: 16px 18px;
+  overflow-y: auto;
+}
+
+.modal-f {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 10px 14px;
+  border-top: 1px solid var(--border);
+  background: var(--bg-panel-2);
+  border-radius: 0 0 var(--rad-lg) var(--rad-lg);
+}

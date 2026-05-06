@@ -1,0 +1,60 @@
+.statusbar {
+  display: flex;
+  align-items: center;
+  height: var(--statusbar-h);
+  padding: 0 var(--sp-3);
+  background: var(--bg-app-deep);
+  border-top: 1px solid var(--border);
+  gap: 18px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--fg-soft);
+}
+
+.sb-cell {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.sb-val {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  color: var(--fg);
+}
+.sb-layer {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.sb-layer-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--layer-floor);
+  box-shadow: 0 0 0 1px #14181d;
+}
+
+.sb-spacer {
+  flex: 1;
+}
+
+.sb-hints {
+  display: flex;
+  gap: 14px;
+  color: var(--fg-mute);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.3px;
+}
+.sb-hints .pxl-kbd {
+  margin-right: 2px;
+}
+
+.sb-dirty {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: var(--fg-mute);
+}
+.sb-dirty.on {
+  color: var(--accent-warm-strong);
+}

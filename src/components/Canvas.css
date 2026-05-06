@@ -1,0 +1,106 @@
+.map-canvas-wrap {
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(45deg, #1a1f25 0 8px, #1d2229 8px 16px);
+  overflow: hidden;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.map-canvas-wrap[data-tool='eraser'] {
+  cursor: cell;
+}
+.map-canvas-wrap[data-tool='picker'] {
+  cursor: copy;
+}
+
+.map-canvas {
+  display: block;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.map-empty-hint {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+.map-empty-frame {
+  background: rgba(20, 24, 29, 0.78);
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.35), 0 0 0 1px var(--border-strong);
+  padding: 18px 22px;
+  border-radius: var(--rad-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 480px;
+}
+.map-empty-title {
+  font-family: var(--font-pixel);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--fg);
+  letter-spacing: 1px;
+}
+.map-empty-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: var(--font-pixel);
+  font-size: 12px;
+  color: var(--fg-soft);
+}
+.map-empty-rows .pxl-kbd {
+  margin: 0 1px;
+}
+
+.map-zoom-pill {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  padding: 0 10px;
+  background: var(--bg-panel-2);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--rad);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--fg-soft);
+  letter-spacing: 1px;
+  box-shadow: 0 1px 0 0 #14181d;
+  pointer-events: none;
+}
+
+.map-shape-chip {
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 28px;
+  padding: 0 10px;
+  background: var(--bg-panel-2);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--rad);
+  font-family: var(--font-pixel);
+  font-size: 12px;
+  color: var(--fg);
+  box-shadow: 0 1px 0 0 #14181d;
+  pointer-events: none;
+}
+.map-shape-chip-name {
+  font-family: var(--font-pixel);
+}
+.map-shape-chip-color {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--rad-sm);
+  box-shadow: inset 0 0 0 1px #14181d;
+}

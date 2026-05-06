@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background: var(--bg-app);
+  color: var(--fg);
+  font-family: var(--font-pixel);
+  font-size: 14px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'ss01' on;
+  letter-spacing: 0.2px;
+  user-select: none;
+  overflow: hidden;
+}
+
+button {
+  font-family: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+input,
+select {
+  font-family: var(--font-mono);
+  color: var(--fg);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-app-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: #3a414a;
+  border: 2px solid var(--bg-app-deep);
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4a525c;
+}
+
+/* —— Pixel UI primitives —— */
+.pxl-panel {
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--rad);
+  box-shadow: var(--sh-inset);
+}
+
+.pxl-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 28px;
+  padding: 0 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--fg);
+  background: var(--bg-panel-2);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--rad);
+  box-shadow: 0 1px 0 0 #14181d;
+  white-space: nowrap;
+  transition: background 80ms ease, border-color 80ms ease, transform 60ms ease;
+}
+.pxl-btn:hover {
+  background: var(--bg-panel-3);
+  border-color: #5a626d;
+}
+.pxl-btn:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+.pxl-btn[data-active='true'] {
+  background: #2c2a1d;
+  border-color: var(--accent-warm);
+  color: var(--accent-warm-strong);
+  box-shadow: 0 0 0 1px var(--accent-warm) inset, 0 1px 0 0 #14181d;
+}
+.pxl-btn[data-warn='true']:hover {
+  border-color: var(--warn);
+  color: var(--warn-strong);
+}
+.pxl-btn:disabled {
+  color: var(--fg-disabled);
+  border-color: var(--border);
+  background: var(--bg-panel);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.pxl-iconbtn {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-panel-2);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--rad);
+  color: var(--fg-soft);
+  box-shadow: 0 1px 0 0 #14181d;
+  transition: color 80ms, border-color 80ms, background 80ms;
+}
+.pxl-iconbtn:hover {
+  color: var(--fg);
+  background: var(--bg-panel-3);
+  border-color: #5a626d;
+}
+.pxl-iconbtn[data-active='true'] {
+  color: var(--accent-warm-strong);
+  background: #2c2a1d;
+  border-color: var(--accent-warm);
+  box-shadow: 0 0 0 1px var(--accent-warm) inset;
+}
+
+.pxl-divider-v {
+  width: 1px;
+  height: 22px;
+  background: var(--border);
+  margin: 0 6px;
+}
+
+.pxl-label {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--fg-mute);
+  font-weight: 600;
+}
+
+.pxl-kbd {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--fg-soft);
+  background: var(--bg-app-deep);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 1px 5px;
+  line-height: 1.2;
+}
+
+.pxl-input {
+  height: 26px;
+  padding: 0 8px;
+  font-size: 12px;
+  background: var(--bg-app-deep);
+  border: 1px solid var(--border);
+  border-radius: var(--rad-sm);
+  color: var(--fg);
+  outline: none;
+  font-family: var(--font-mono);
+}
+.pxl-input:focus {
+  border-color: var(--accent-cool);
+  box-shadow: 0 0 0 1px var(--accent-cool) inset;
+}
+
+.pxl-checkbox {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  background: var(--bg-app-deep);
+  border: 1px solid var(--border-strong);
+  border-radius: 2px;
+  display: inline-grid;
+  place-items: center;
+  cursor: pointer;
+  position: relative;
+}
+.pxl-checkbox:checked {
+  background: var(--accent-warm);
+  border-color: var(--accent-warm);
+}
+.pxl-checkbox:checked::after {
+  content: '';
+  width: 6px;
+  height: 3px;
+  border-left: 2px solid #1e2329;
+  border-bottom: 2px solid #1e2329;
+  transform: rotate(-45deg) translate(0, -1px);
+}

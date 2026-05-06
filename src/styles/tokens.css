@@ -1,0 +1,64 @@
+:root {
+  /* —— Surfaces —— */
+  --bg-app: #1e2329;
+  --bg-app-deep: #181c22;
+  --bg-canvas: #2e343d;
+  --bg-panel: #20252b;
+  --bg-panel-2: #262c33;
+  --bg-panel-3: #2c333b;
+  --bg-elev: #32393f;
+
+  /* —— Lines & strokes —— */
+  --grid-line: #3f4650;
+  --grid-line-soft: #353b44;
+  --border: #353b44;
+  --border-strong: #4a525c;
+  --border-inset: #14181d;
+
+  /* —— Text —— */
+  --fg: #e6ebf2;
+  --fg-soft: #aab2bd;
+  --fg-mute: #6f7680;
+  --fg-disabled: #4f5660;
+
+  /* —— Accents —— */
+  --accent-warm: #f2c94c;       /* selected / current */
+  --accent-warm-strong: #ffd864;
+  --accent-cool: #4fd1c5;       /* hover */
+  --accent-cool-strong: #6ee7dc;
+  --warn: #e06c75;              /* destructive */
+  --warn-strong: #ff8088;
+
+  /* —— Layer tags —— */
+  --layer-floor: #6aa9ff;
+  --layer-ground: #f2c94c;
+  --layer-roof: #b48cff;
+
+  /* —— Typography —— */
+  --font-pixel: 'Pixelify Sans', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* —— Sizing —— */
+  --rad-sm: 2px;
+  --rad: 3px;
+  --rad-lg: 4px;
+
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+
+  --toolbar-h: 44px;
+  --statusbar-h: 28px;
+  --left-w: 280px;
+  --left-w-collapsed: 36px;
+  --inspector-w: 296px;
+
+  /* —— Shadows —— */
+  --sh-pixel-1: 0 1px 0 0 #14181d, 0 0 0 1px var(--border);
+  --sh-pixel-2: 0 2px 0 0 #14181d, 0 0 0 1px var(--border-strong);
+  --sh-inset: inset 0 0 0 1px #11151a;
+  --sh-elev: 0 6px 0 0 rgba(0, 0, 0, 0.35), 0 0 0 1px var(--border-strong);
+}
