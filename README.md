@@ -22,6 +22,8 @@ A dark, pixel-styled 2D top-down whitebox tile map editor for prototyping indoor
 
 ## Features
 
+![preview](Images/preview_en.png)
+
 - **30 procedurally drawn pixel tiles** — floors, walls, doors, windows, furniture, foliage, ceiling fixtures, and more.
 - **Three editing layers** — Floor, Ground, and Roof, each independently visible / hidden / dimmed.
 - **Three tools** — Brush (Pencil + Rectangle), Eraser, and Color Picker.
